@@ -1,0 +1,22 @@
+Traceback (most recent call last):
+  File "run_traceback.py", line 8, in run
+    main.main()
+  File "F:\code\GBNC-main\GBNC-main - 修改版\main.py", line 213, in main
+    new_data = gb_division(data, args)
+  File "F:\code\GBNC-main\GBNC-main - 修改版\gb_division.py", line 34, in gb_division
+    (np.ones(data.edge_index.shape[1]), (data.edge_index[0], data.edge_index[1])), dtype=np.float32
+  File "D:\anaconda3\envs\lsk\lib\site-packages\scipy\sparse\coo.py", line 149, in __init__
+    M = operator.index(np.max(row)) + 1
+  File "<__array_function__ internals>", line 6, in amax
+  File "D:\anaconda3\envs\lsk\lib\site-packages\numpy\core\fromnumeric.py", line 2755, in amax
+    keepdims=keepdims, initial=initial, where=where)
+  File "D:\anaconda3\envs\lsk\lib\site-packages\numpy\core\fromnumeric.py", line 84, in _wrapreduction
+    return reduction(axis=axis, out=out, **passkwargs)
+TypeError: max() received an invalid combination of arguments - got (axis=NoneType, out=NoneType, ), but expected one of:
+ * ()
+ * (Tensor other)
+ * (int dim, bool keepdim)
+      didn't match because some of the keywords were incorrect: axis, out
+ * (name dim, bool keepdim)
+      didn't match because some of the keywords were incorrect: axis, out
+

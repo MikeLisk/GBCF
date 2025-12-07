@@ -1,1 +1,1 @@
-# GBCF
+# Granular-Ball-Node-Classifction
